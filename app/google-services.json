@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "269141909372",
+    "firebase_url": "https://pict-assistant-1a63c.firebaseio.com",
+    "project_id": "pict-assistant-1a63c",
+    "storage_bucket": "pict-assistant-1a63c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269141909372:android:6a85af12ac61eb77",
+        "android_client_info": {
+          "package_name": "com.example.sairaj.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269141909372-h9bnfbm3u9m2b149fh7dk4ijuhtctqdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sairaj.myapplication",
+            "certificate_hash": "134340a1f533eb1a097360be18b53232c2954cf9"
+          }
+        },
+        {
+          "client_id": "269141909372-v53usnhl7pmnqrpdb2u3i5vndd8cd9en.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCicoXnnE-WaNJb1oynNS0U1JgIoQgY-B0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269141909372-v53usnhl7pmnqrpdb2u3i5vndd8cd9en.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269141909372:android:fc41d364cbb81da9",
+        "android_client_info": {
+          "package_name": "com.simplifiers.pictassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269141909372-svjjmdq38dbpt911rd44flbgbtdgfhbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simplifiers.pictassistant",
+            "certificate_hash": "134340a1f533eb1a097360be18b53232c2954cf9"
+          }
+        },
+        {
+          "client_id": "269141909372-v53usnhl7pmnqrpdb2u3i5vndd8cd9en.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCicoXnnE-WaNJb1oynNS0U1JgIoQgY-B0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269141909372-v53usnhl7pmnqrpdb2u3i5vndd8cd9en.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
