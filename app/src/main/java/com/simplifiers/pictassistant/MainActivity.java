@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText editText_email,editText_enrollmentno,editText_password,editText_classname,editText_batchname;
     private Button button_proceed;
+    private String email;
+
 
     private FirebaseFirestore db ;
     private FirebaseAuth mAuth;
@@ -118,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
+
                         mAuth.createUserWithEmailAndPassword(editText_email.getText().toString(), editText_password.getText().toString())
                                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                     @Override
@@ -155,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
                         if(task.isSuccessful()){
 
                             Map<String, Object> user = new HashMap<>();
+                            email = editText_email.getText().toString();
                             user.put("email", editText_email.getText().toString());
                             user.put("enrollmentno", editText_enrollmentno.getText().toString());
                             user.put("password", editText_password.getText().toString());
@@ -162,10 +166,11 @@ public class MainActivity extends AppCompatActivity {
                             user.put("batchname", editText_batchname.getText().toString());
 
                             db.collection("users")
-                                    .add(user)
-                                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                    .document(email)
+                                    .set(user)
+                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
-                                        public void onSuccess(DocumentReference documentReference) {
+                                        public void onSuccess(Void aVoid) {
                                             Snackbar.make(view,"DETAILS ADDED",Snackbar.LENGTH_SHORT).show();
                                             nextactivity = new Intent(MainActivity.this,Main2Activity.class);
                                             startActivity(nextactivity);
